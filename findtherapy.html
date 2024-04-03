@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find therapy options for veterans seeking support">
+    <meta name="keywords" content="Therapy, Veterans, Find Therapy">
+    <meta name="author" content="Andrew Cain">
+    <title>New Veterans Therapy - Find Therapy</title>
+    <link rel="stylesheet" href="css/findtherapystyles.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QM72HPT7PT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QM72HPT7PT');
+</script>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/ArmyLogo.jpg" alt="Army Star"></a>
+            <h1>New Veterans Therapy</h1>
+            <a href="index.html"><img src="images/MentalHealthCoalition.png" alt="Mental Health Coalition Seal"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="findtherapy.html">Find Therapy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <h2>Find Therapy</h2>
+        <form id="therapy-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            
+            <label for="meeting-type">Form of Meeting:</label>
+            <select id="meeting-type" name="meeting-type" required>
+                <option value="in-person">In Person</option>
+                <option value="online">Online</option>
+                <option value="hybrid">Hybrid</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="alternative-options">
+        <h2>Alternative Options</h2>
+        <div class="image-links">
+            <a href="https://www.betterhelp.com/"><img src="images\BetterHelp.png" alt="Better Help Online Therapy Logo"></a>
+            <a href="https://try.talkspace.com/"><img src="images\TalkSpace.jpg" alt="Talk Spcae Online Therapy Logo"></a>
+            <a href="https://www.brightside.com/"><img src="images\Brightside.png" alt="Brightside Online Therapy Logo"></a>
+        </div>
+    </section>
+
+    <script src="javascript\findtherapy.js"></script>
+</body>
+</html>
