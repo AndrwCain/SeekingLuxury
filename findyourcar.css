@@ -1,0 +1,210 @@
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack body elements vertically */
+    min-height: 100vh; /* Make the body take up at least the full height of the viewport */
+    background-color: darkred; 
+    color: antiquewhite;
+    font-size: 1.1rem; /* Slightly increase base font size for body text */
+}
+
+header {
+    background-color: black; /* Header background color */
+    color: antiquewhite;
+    padding: 20px; /* Add padding around the header */
+    display: flex; /* Flexbox to align the image and text horizontally */
+    width: 100%; /* Make the header span the full width of the page */
+    box-sizing: border-box; /* Ensure padding doesn’t cause the header to overflow */
+    position: relative; /* Ensure it stays at the top of the page */
+}
+
+#logo {
+    width: 110px; /* Slightly increase the size of the logo */
+    height: auto; /* Maintain aspect ratio of the logo */
+    margin-right: 20px; /* Add space between the logo and the text */
+}
+
+#header-text {
+    display: flex;
+    flex-direction: column; /* Stack the h1 and h2 vertically */
+}
+
+#main-title {
+    font-size: 40px; /* Slightly increase the size of the main title */
+    margin: 0; /* Remove default margins */
+    color: antiquewhite;
+    font-family: 'Great Vibes', cursive; /* Text color */
+}
+
+#sub-title {
+    font-size: 22px; /* Slightly increase the size of the subtitle */
+    margin: 0; /* Remove default margins */
+    color: #777; /* Text color for subtitle */
+}
+
+nav {
+    width: 100%; /* Make the nav bar span the full width */
+    background-color: black; /* Set background color for the nav */
+    margin-top: 10px; /* Add space between the header and nav */
+    padding: 10px 0; /* Padding inside the nav */
+    text-align: center; /* Center the navigation items */
+}
+
+#nav-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox to align the items horizontally */
+    justify-content: center; /* Center the items in the nav */
+}
+
+#nav-list li {
+    margin: 0 20px; /* Slightly increase space between each nav item */
+    font-size: 20px; /* Slightly increase font size for nav items */
+    display: inline-block; /* Ensure nav items remain on the same line */
+    color: goldenrod;
+}
+
+main {
+    flex-grow: 1; /* Allow main content to grow and push the footer down */
+}
+
+#hiddengems {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+.gallery {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distribute space evenly between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    padding: 20px; /* Optional padding around the gallery */
+    background-color: darkred; /* Optional background color for visibility */
+}
+
+.gallery img {
+    width: 220px; /* Slightly increase fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Optional margin around images for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    transition: transform 0.3s; /* Add a transition for hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+#zipform{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer {
+    background-color: black; /* Set the background color of the footer */
+    color: antiquewhite; /* Text color */
+    padding: 20px; /* Padding around the footer */
+    width: 100%; /* Make the footer span the full width */
+    text-align: center; /* Center the text */
+    position: relative; /* Optional for ensuring footer placement */
+    bottom: 0; /* Ensure footer is at the bottom */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow wrapping to new lines if necessary */
+}
+
+.footer-logo {
+    width: 60px; /* Slightly increase logo size in footer */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between the logo and icons */
+}
+
+.footer-icon {
+    width: 50px; /* Slightly increase icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between icons */
+}
+
+.footer-text {
+    margin-left: 20px; /* Space between icons and text */
+    display: flex; /* Use flexbox for the text */
+    flex-direction: column; /* Stack text vertically */
+    align-items: center; /* Center text items */
+}
+
+.footer-text p {
+    margin: 5px 0; /* Space between each line of text */
+    font-size: 18px; /* Slightly increase font size for footer text */
+}
+
+table {
+    width: 100%; /* Full width of container */
+    border-collapse: collapse; /* Merge borders for a cleaner look */
+    margin: 20px 0; /* Add space above and below the table */
+    background-color: #2b2b2b; /* Dark background for the table */
+    color: antiquewhite; /* Font color for readability */
+    font-size: 1.4rem; /* Increase base font size for readability */
+}
+
+th, td {
+    padding: 20px; /* Add padding inside each cell for a cleaner look */
+    text-align: left; /* Align text to the left for readability */
+    vertical-align: top; /* Align cell content to the top */
+}
+
+th {
+    background-color: black; /* Background color for header cells */
+    color: goldenrod; /* Gold color for header text */
+    font-weight: bold; /* Make headers bold */
+    font-size: 1.5rem; /* Increase header font size */
+}
+
+tr {
+    border-bottom: 2px solid goldenrod; /* Gold borders between rows */
+}
+
+tr:hover {
+    background-color: #3a3a3a; /* Slightly lighter background on row hover */
+}
+
+td img {
+    width: 180px; /* Set fixed width for consistent image size */
+    height: 120px; /* Set fixed height to maintain uniformity */
+    object-fit: cover; /* Crop image to fit specified dimensions */
+    border-radius: 8px; /* Slight rounding on image corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for image depth */
+}
+
+td p {
+    margin: 0; /* Remove default paragraph margins for consistency */
+    font-size: 1.2rem; /* Increase paragraph font size for readability */
+    line-height: 1.5; /* Improve readability with more line spacing */
+}
+
+caption {
+    font-size: 1.5rem; /* Larger font size for caption */
+    color: goldenrod; /* Gold color for caption text */
+    padding: 10px 0; /* Padding around the caption */
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    td img {
+        width: 150px; /* Adjust width for mobile */
+        height: 100px; /* Adjust height for mobile */
+    }
+
+    th, td {
+        font-size: 1.2rem; /* Reduce font size slightly on mobile */
+    }
+}
