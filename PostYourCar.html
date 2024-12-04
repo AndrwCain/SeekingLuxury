@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Listings for cars for sale at Seeking Luxury">
+    <meta name="keywords" content="Luxury Cars, Listing, Mileage, Purchase Car, For Sale, Dealership">
+    <meta name="author" content="Andrew Cain">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Post Your Car</title>
+    <link rel="stylesheet" href="postyourcar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo" src="Images\Logo.png" alt="Seeking Luxury Logo">
+        <div id="header-text">
+            <h1 id="main-title">Seeking Luxury</h1>
+            <h2 id="sub-title">“Number 1 luxury supplier in the Southeast”</h2>
+    
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="FindYourCar.html">Find Your Car</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="PostYourCar.html">Post Your Car</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section>
+        <h1>We Will Sell Your Car:</h1>
+        <p>Provide the following information and we will contact you with information relating to the sale of your car</p>
+    </section>
+    <div>
+    <form action="#" method="POST">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <!-- Phone Number field -->
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br><br>
+
+        
+        <label for="make">Luxury Car Make</label><br>
+        <select id="make" name="make" required>
+            <option value="" disabled selected>Select a luxury car make</option>
+            <option value="Bentley">Bentley</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Rolls-Royce">Rolls-Royce</option>
+            <option value="McLaren">McLaren</option>
+            <option value="Aston Martin">Aston Martin</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Maserati">Maserati</option>
+        </select><br><br>
+
+       
+        <label for="type">Car Type</label><br>
+        <select id="type" name="type" required>
+            <option value="" disabled selected>Select a car type</option>
+            <option value="Convertible">Convertible</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Roadster">Roadster</option>
+        </select><br><br>
+
+        
+        <label for="year">Year</label><br>
+        <input type="number" id="year" name="year" placeholder="Enter the car's year" min="1900" max="2024" required><br><br>
+
+        
+        <label for="mileage">Mileage</label><br>
+        <input type="number" id="mileage" name="mileage" placeholder="Enter the car's mileage" required><br><br>
+
+        
+        <input type="checkbox" id="used" name="condition" value="used">
+        <label for="used">Used</label><br>
+        <input type="checkbox" id="new" name="condition" value="new">
+        <label for="new">New</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</main>
+    <footer class="footer">
+        <div class="footer-content">
+        <img src="Images/Logo.png" alt="Seeking Luxury Logo" class="footer-logo" style="width:50px; height:auto;">
+        <img src="Images\InstagramLogo.png" alt="Instagram Logo" class="footer-icon" style="width:40px; height:auto;">
+        <img src="Images\XLogo.jpeg" alt="X Logo" class="footer-icon" style="width:40px; height:auto;">
+        <div class="footer-text">
+        <p>SeekingLuxurySC@gmail.com&nbsp;&nbsp;&nbsp;803-722-8426&nbsp;&nbsp;&nbsp;954 A Willet Rd Columbia, SC</p>
+        </div>
+        </div>
+    </footer>
+    <script src="postyourcar.js"></script>
+</body>
+</html>
